@@ -1,10 +1,3 @@
-//
-//  NetwrokError.swift
-//  Moviefy
-//
-//  Created by Jibryll Brinkley on 4/29/26.
-//
-
 public enum NetworkError: String, Error {
     case parametersNil = "Parameters were nil"
     case encodingFailed = "Parameter Encoding failed"

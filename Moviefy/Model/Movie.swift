@@ -1,11 +1,3 @@
-//
-//  Movie.swift
-//  Moviefy
-//
-//  Created by Adriana González Martínez on 4/7/20.
-//  Copyright © 2020 Adriana González Martínez. All rights reserved.
-//
-
 import Foundation
 
 struct Movie {
@@ -15,19 +7,16 @@ struct Movie {
     let releaseDate: String
 }
 
-// properties within a Movie returned from the API that we want to extract the info from
 extension Movie: Codable {
-    
-    enum MovieCodingKeys: String, Codable {
+    enum MovieCodingKeys: String, CodingKey {
         case id
         case posterPath = "poster_path"
         case title
         case releaseDate = "release_date"
     }
     
-    //Decode API properties into proper type "string" "int"
     init(from decoder: any Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let container = try decoder.container(keyedBy: MovieCodingKeys.self)
         self.id = try container.decode(Int.self, forKey: .id)
         self.title = try container.decode(String.self, forKey: .title)
         self.posterPath = try container.decode(String.self, forKey: .posterPath)
@@ -35,14 +24,13 @@ extension Movie: Codable {
     }
 }
 
-struct MovieAPIResponse {
+struct MovieAPIResponse: Decodable {
     let page: Int
     let numberOfPages: Int
     let movies: [Movie]
 }
 
 extension MovieAPIResponse {
-    
     private enum MovieAPIResponseCodingKeys: String, CodingKey {
         case page
         case numberOfPages = "total_pages"
