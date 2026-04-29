@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -55,6 +55,10 @@
 		ABAB4F13241A1732001E85CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABAB4F15241A1732001E85CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F53F3D052FA17F5100770EC5 /* Networking */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Networking; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ABAB4F01241A172E001E85CA /* Frameworks */ = {
@@ -123,6 +127,7 @@
 		ABAB4F06241A172E001E85CA /* Moviefy */ = {
 			isa = PBXGroup;
 			children = (
+				F53F3D052FA17F5100770EC5 /* Networking */,
 				ABAB4F07241A172E001E85CA /* AppDelegate.swift */,
 				ABAB4F09241A172E001E85CA /* SceneDelegate.swift */,
 				AB9F580E243D680D006612A3 /* Model */,
@@ -152,6 +157,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F53F3D052FA17F5100770EC5 /* Networking */,
 			);
 			name = Moviefy;
 			packageProductDependencies = (
