@@ -22,6 +22,7 @@
 		ABAB4F0F241A172E001E85CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAB4F0D241A172E001E85CA /* Main.storyboard */; };
 		ABAB4F11241A1732001E85CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAB4F10241A1732001E85CA /* Assets.xcassets */; };
 		ABAB4F14241A1732001E85CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAB4F12241A1732001E85CA /* LaunchScreen.storyboard */; };
+		F53F3D1C2FA2B02800770EC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F3D1B2FA2B02500770EC5 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +55,7 @@
 		ABAB4F10241A1732001E85CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABAB4F13241A1732001E85CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABAB4F15241A1732001E85CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53F3D1B2FA2B02500770EC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -95,6 +97,7 @@
 		AB9F5806243D6495006612A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F53F3D1B2FA2B02500770EC5 /* LoginViewController.swift */,
 				ABAB4F0B241A172E001E85CA /* ViewController.swift */,
 			);
 			path = Controller;
@@ -228,6 +231,7 @@
 				AB9F5800243D62FF006612A3 /* TitleSection.swift in Sources */,
 				AB9F5803243D6327006612A3 /* TitleCell.swift in Sources */,
 				ABAB4F0C241A172E001E85CA /* ViewController.swift in Sources */,
+				F53F3D1C2FA2B02800770EC5 /* LoginViewController.swift in Sources */,
 				ABAB4F08241A172E001E85CA /* AppDelegate.swift in Sources */,
 				AB9F5810243D6820006612A3 /* Movie.swift in Sources */,
 				AB9F57FA243D54F1006612A3 /* MovieCell.swift in Sources */,
