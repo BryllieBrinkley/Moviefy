@@ -3,7 +3,6 @@
 //  Moviefy
 //
 //  Created by Jibryll Brinkley on 4/29/26.
-//  Copyright © 2026 Adriana González Martínez. All rights reserved.
 //
 
 public enum NetworkError: String, Error {

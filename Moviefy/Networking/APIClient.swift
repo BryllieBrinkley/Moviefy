@@ -3,7 +3,6 @@
 //  Moviefy
 //
 //  Created by Jibryll Brinkley on 4/28/26.
-//  Copyright © 2026 Adriana González Martínez. All rights reserved.
 //
 
 // Client: a computer in a network that uses the services provided by a server.
